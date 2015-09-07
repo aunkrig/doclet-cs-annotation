@@ -33,10 +33,10 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Derives a regular expression rule property from a setter method.
+ * Derives a "file" rule property from a setter method.
  */
 @Target(METHOD) @Retention(RetentionPolicy.SOURCE) public
-@interface RegexRuleProperty {
+@interface FileRuleProperty {
 
     String name()                 default "";
     String defaultValue()         default "";

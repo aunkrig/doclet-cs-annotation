@@ -36,7 +36,7 @@ import java.lang.annotation.Target;
  * Derives a string rule property from a setter method.
  */
 @Target(METHOD) @Retention(RetentionPolicy.SOURCE) public
-@interface StringRuleProperty  {
+@interface StringRuleProperty {
 
     String name()                 default "";
     String defaultValue()         default "";

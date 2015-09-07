@@ -36,7 +36,7 @@ import java.lang.annotation.Target;
  * Derives a boolean rule property from a setter method.
  */
 @Target(METHOD) @Retention(RetentionPolicy.SOURCE) public
-@interface BooleanRuleProperty  {
+@interface BooleanRuleProperty {
 
     String  name() default "";
     boolean defaultValue() default false;

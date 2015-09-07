@@ -36,7 +36,7 @@ import java.lang.annotation.Target;
  * Derives a 'multi-check' rule property from a setter method.
  */
 @Target(METHOD) @Retention(RetentionPolicy.SOURCE) public
-@interface MultiCheckRuleProperty  {
+@interface MultiCheckRuleProperty {
 
     String   name()           default "";
     Class<?> optionProvider() default Object.class;

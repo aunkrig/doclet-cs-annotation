@@ -36,7 +36,7 @@ import java.lang.annotation.Target;
  * Derives an integer rule property from a setter method.
  */
 @Target(METHOD) @Retention(RetentionPolicy.SOURCE) public
-@interface IntegerRuleProperty  {
+@interface IntegerRuleProperty {
 
     String name()         default "";
     int    defaultValue() default 0;
