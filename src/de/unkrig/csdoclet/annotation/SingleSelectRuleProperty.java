@@ -36,7 +36,7 @@ import java.lang.annotation.Target;
  * Derives a 'single-select' rule property from a setter method.
  */
 @Target(METHOD) @Retention(RetentionPolicy.SOURCE) public
-@interface SingleSelectRuleProperty  {
+@interface SingleSelectRuleProperty {
 
     String   name()           default "";
     Class<?> optionProvider() default Object.class;
