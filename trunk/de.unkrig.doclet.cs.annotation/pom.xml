@@ -153,7 +153,7 @@
 		</profile>
 	</profiles>
 
-	<name>The CheckStyle doclet</name>
+	<name>The CheckStyle doclet runtime</name>
 
 	<organization>
 		<name>Arno Unkrig</name>
