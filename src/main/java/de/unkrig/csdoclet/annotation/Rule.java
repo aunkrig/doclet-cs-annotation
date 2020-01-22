@@ -35,7 +35,7 @@ import java.lang.annotation.Target;
  * Derives a boolean rule from a class.
  */
 @Target(ElementType.TYPE) @Retention(RetentionPolicy.SOURCE) public
-@interface Rule  {
+@interface Rule {
 
     String group();
 
@@ -66,6 +66,13 @@ import java.lang.annotation.Target;
     String     groupName();
     String     name();
     String     parent();
-    Class<?>[] quickfixes() default {};
+
+    /**
+     * @return A set of names of classes that implement "net.sf.eclipsecs.ui.quickfixes.ICheckstyleMarkerResolution",
+     *         and apply to this check or filter; don't use {@code Class[]} in order to avoid compile time dependencies
+     *         from the check/filter to its quickfixes
+     */
+    String[] quickfixes() default {};
+
     boolean    hasSeverity() default true;
 }
