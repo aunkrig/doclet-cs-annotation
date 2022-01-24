@@ -78,6 +78,7 @@
 				</executions>
 			</plugin>
 
+			<!-- Deploy on oss.sonatype.org. -->
 			<plugin>
 				<groupId>org.sonatype.plugins</groupId>
 				<artifactId>nexus-staging-maven-plugin</artifactId>
